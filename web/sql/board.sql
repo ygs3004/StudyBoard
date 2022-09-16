@@ -1,6 +1,6 @@
-DROP SEQUENCE board_seq;
 DROP TABLE board;
 
+DROP SEQUENCE board_seq;
 CREATE TABLE board(
     num NUMBER(3) NOT NULL PRIMARY KEY,
     writer VARCHAR2(20),

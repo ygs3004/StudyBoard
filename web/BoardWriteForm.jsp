@@ -15,7 +15,7 @@
 <body>
     <div class="centered">
         <h2 align="center">게시글 쓰기</h2>
-            <form action="BoardWriteProc.jsp" method="post">
+            <form action="write.do" method="post">
                 <table width="600" border="1" bordercolor="gray" bgcolor="skyblue">
                     <tr height="40">
                         <td align="center" width="150">작성자</td>
