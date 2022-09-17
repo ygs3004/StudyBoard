@@ -61,7 +61,7 @@
             <tr height="40">
                 <td width="50" align="center"><%=number--%></td>
                 <td width="320" aligh="left">
-                    <a href="BoardInfo.jsp?num=<%=bean.getNum()%>" style="text-decoration: none;">
+                    <a href="info.do?num=<%=bean.getNum()%>" style="text-decoration: none;">
                         <%
                             if(bean.getRe_step()>1){
                                 for(int j=0; j<(bean.getRe_step()-1)*5;j++){

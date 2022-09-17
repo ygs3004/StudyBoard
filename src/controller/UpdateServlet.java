@@ -3,6 +3,7 @@ package controller;
 import model.BoardBean;
 import model.BoardDAO;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +16,16 @@ import java.io.PrintWriter;
 public class UpdateServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        int num = Integer.parseInt(request.getParameter("num"));
+        String url = "BoardUpdateForm.jsp";
+
+        BoardDAO dao = new BoardDAO();
+        BoardBean bean = dao.getOneUpdateBoard(num);
+        request.setAttribute("bean",bean);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+        dispatcher.forward(request, response);
     }
 
     @Override

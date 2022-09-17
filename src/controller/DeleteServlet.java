@@ -3,6 +3,7 @@ package controller;
 import model.BoardBean;
 import model.BoardDAO;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -11,11 +12,21 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "DeleteServle", value = "/delete.do")
+@WebServlet(name = "DeleteServlet", value = "/delete.do")
 public class DeleteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.sendRedirect("BoardDeleteForm.jsp");
+
+        int num = Integer.parseInt(request.getParameter("num"));
+        String url = "BoardDeleteForm.jsp";
+
+        BoardDAO dao = new BoardDAO();
+        BoardBean bean = dao.getOneUpdateBoard(num);
+        request.setAttribute("bean",bean);
+
+        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+        dispatcher.forward(request, response);
+
     }
 
     @Override
