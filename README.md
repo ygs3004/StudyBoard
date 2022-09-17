@@ -4,4 +4,7 @@
     <li>글 생성</li> 
     <li>비밀번호 체크 후 삭제, 수정</li>
     <li>답변, 답변의 답변글</li>
+    <li>220917Jisung : InfoServlet, BoardInfo.jsp 수정<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Update/Delete Servlet Get방식 수정 </li>
 </ul>
