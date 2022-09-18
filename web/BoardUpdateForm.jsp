@@ -36,7 +36,7 @@
                     <td colspan="4" align="center">
                         <input type="hidden" name="num" value="${bean.num}">
                         <input type="submit" value="글 수정">&nbsp;&nbsp;
-                        <input type="button" onclick="location.href='BoardList.jsp'" value="전체 글 보기">
+                        <input type="button" onclick="location.href='list.do'" value="전체 글 보기">
                     </td>
                 </tr>
             </table>

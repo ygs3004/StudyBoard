@@ -49,7 +49,7 @@ public class UpdateServlet extends HttpServlet {
             bean.setSubject(subject);
             bean.setContent(content);
             dao.updateBoard(bean);
-            response.sendRedirect("BoardList.jsp");
+            response.sendRedirect("list.do");
         }else { // 비번이 다를경우 돌려보내기
             response.setContentType("text/html; charset=UTF-8");
             PrintWriter out = response.getWriter();

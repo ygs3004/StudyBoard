@@ -14,8 +14,13 @@ import static java.lang.System.out;
 public class WriteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //BoardList.jsp 에서 get 방식으로 BoardWriteForm에 연결할 경우
-        response.sendRedirect("BoardWriteForm.jsp");
+        //list 에서 get 방식으로 BoardWriteForm에 연결할 경우
+
+        String url = "BoardWriteForm.jsp";
+
+        RequestDispatcher rd = request.getRequestDispatcher(url);
+        rd.forward(request, response);
+
     }
 
     @Override
@@ -36,7 +41,7 @@ public class WriteServlet extends HttpServlet {
         bean.setContent(content);
 
         new BoardDAO().insertBoard(bean);
-        response.sendRedirect("BoardList.jsp");
+        response.sendRedirect("list.do");
 
     }
 }

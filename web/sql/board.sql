@@ -15,6 +15,19 @@ CREATE TABLE board(
     content VARCHAR2(500)
 );
 
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+INSERT INTO board VALUES(board_seq.nextval, 1, 1, 1, 1, SYSDATE, 1, 1, 1, 0, 1);
+
 CREATE SEQUENCE board_seq;
 COMMIT;
 DELETE FROM board;

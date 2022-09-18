@@ -7,4 +7,6 @@
     <li>220917Jisung : InfoServlet, BoardInfo.jsp 수정<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     Update/Delete Servlet Get방식 수정 </li>
+    <li>220919 : List Servlet, List.jsp 수정</li>
+    <li>220919final : 아마 최종</li>
 </ul>

@@ -38,10 +38,10 @@
         </tr>
         <tr height="40">
             <td align="center" colspan="4">
-                <input type="button" value="답글쓰기" onclick="location.href='BoardReWriteForm.jsp?num=${bean.num }&ref=${bean.ref }&re_step=${bean.re_step }&re_level=${bean.re_level }'">
+                <input type="button" value="답글쓰기" onclick="location.href='rewrite.do?num=${bean.num}&ref=${bean.ref}&re_step=${bean.re_step}&re_level=${bean.re_level}'">
                 <input type="button" value="수정" onclick="location.href='update.do?num=${bean.num}'">
                 <input type="button" value="삭제" onclick="location.href='delete.do?num=${bean.num}'">
-                <input type="button" value="목록보기" onclick="location.href='BoardList.jsp'">
+                <input type="button" value="목록보기" onclick="location.href='list.do'">
             </td>
         </tr>
     </table>

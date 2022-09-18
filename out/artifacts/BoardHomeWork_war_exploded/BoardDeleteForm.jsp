@@ -38,7 +38,7 @@
             </tr>
             <tr height="40">
                 <td align="center" colspan="4"><input type="hidden" name="num" value="<%=num%>"> <!--${bean.num}-->
-                    <input type="submit" value="글삭제">&nbsp;&nbsp;<input type="button" onclick="location.href='BoardList.jsp'" value="목록보기">
+                    <input type="submit" value="글삭제">&nbsp;&nbsp;<input type="button" onclick="location.href='list.do'" value="목록보기">
                 </td>
             </tr>
         </table>
