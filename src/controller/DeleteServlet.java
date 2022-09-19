@@ -42,7 +42,7 @@ public class DeleteServlet extends HttpServlet {
 
           if(pass.equals(password)){  // 비번이 같을 경우 삭제
                 dao.deleteBoard(num);
-                response.sendRedirect("controller.BoardList.jsp");
+                response.sendRedirect("list.do");
           }else { // 비번이 다를경우 돌려보내기
                 response.setContentType("text/html; charset=UTF-8");
                 PrintWriter out = response.getWriter();

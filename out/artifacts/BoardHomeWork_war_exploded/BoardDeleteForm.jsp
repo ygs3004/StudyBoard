@@ -7,13 +7,6 @@
     <meta charset="UTF-8">
     <title>회원 삭제</title>
 </head>
-<%
-    //InfoServlet 에서 작동하고 이건 지울것
-    BoardDAO bdao = new BoardDAO();
-
-    int num = Integer.parseInt(request.getParameter("num"));
-    BoardBean bean = bdao.getOneUpdateBoard(num);
-%>
 <body>
 <br><br><div align="center" class="container">
     <form action="delete.do" method="post">
